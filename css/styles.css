@@ -39,6 +39,7 @@ body
     
 }
 
+
 .profiletext
 {
     position: relative;
@@ -92,7 +93,11 @@ overflow: hidden;
     padding-top: 40px;
 }
 
-
+.side-text *
+{
+    color: #fff;
+    text-decoration: none;
+}
 
 .title
 {
@@ -280,6 +285,27 @@ p
     width: 20px;
 }
 
+
+.btn
+{
+    position: fixed;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color:#003147;
+    bottom: 16px;
+    right: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    box-shadow: 5px -2px 46px -12px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 5px -2px 46px -12px rgba(0,0,0,0.61);
+    -moz-box-shadow: 5px -2px 46px -12px rgba(0,0,0,0.61);
+}
+
 @media (max-width: 1000px)
 {
     .container
@@ -312,3 +338,4 @@ p
         grid-template-columns: repeat(1,1fr);
     }
 }
+

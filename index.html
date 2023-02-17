@@ -5,6 +5,8 @@
     <title>Curriculum</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <script defer src="./scrips/generar_pdf.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 </head>
 <body>
@@ -25,23 +27,23 @@
                 <ul>
                     <li>
                         <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                        <span class="text">+54 9 3434634042</span>
+                        <span class="side-text"><a href="https://wa.me/+5493434634042">+54 9 3434634042</a></span>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                        <span class="text"><a href="mailto:micaelaro29@gmail.com?subject=gmail"> micaelaro29@gmail.com </a></span>
+                        <span class="side-text"><a href="mailto:micaelaro29@gmail.com?subject=gmail"> micaelaro29@gmail.com </a></span>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-                        <span class="text">micaarodriguez1</span>
+                        <span class="side-text"><a href="https://instagram.com/micaarodriguez1?igshid=YmMyMTA2M2Y=">micaarodriguez1</a></span>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-briefcase" aria-hidden="true"></i></span>
-                        <span class="text">https://n9.cl/micadesing</span>
+                        <span class="side-text"><a href="https://n9.cl/micadesing">https://n9.cl/micadesing</a></span>
                     </li>
                     <li>
                         <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span class="text">Paraná, Argentina</span>
+                        <span class="side-text">Paraná, Argentina</span>
                     </li>
                 </ul>
 
@@ -51,7 +53,7 @@
 
 
             <div class="contactinfo education">
-                <h3 class="title">Educacióon</h3>
+                <h3 class="title">Educación</h3>
                 <ul>
                     <li>
                         <h5>2013-2018</h5>
@@ -198,6 +200,10 @@
             </div>
 
     </div>
+   
     </div>
+ <button class="btn" id="boton" onclick="generarPDF()">  
+        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+ </button>
 </body>
 </html>
